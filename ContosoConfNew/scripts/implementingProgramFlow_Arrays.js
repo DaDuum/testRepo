@@ -44,7 +44,7 @@ function executeFunction04() {
 
     function roundOff(value, index, array) {
         return Math.round(value);
-    }
+    } 
     console.log(roundedMoney);
 
 }
