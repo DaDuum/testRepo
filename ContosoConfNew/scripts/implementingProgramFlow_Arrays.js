@@ -56,7 +56,7 @@ function executeFunction05() {
         if (iterator % 3 == 0 || iterator % 5 == 0) {
             console.log(iterator)
             sum += iterator;
-             
+              
         }
     }
     console.log(sum);
