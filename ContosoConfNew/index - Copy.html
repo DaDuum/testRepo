@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="scripts/JavaScript.js"></script>
+    <script>
+        window.onload = function () {
+        //    //var element = this.document.getElementsByClassName("subPara");
+        //    //alert(element.length);
+
+        //    //var element = this.document.getElementById("innerDiv");
+        //    //alert(element.innerHTML);
+        //    //this.document.removeChild(element);
+        //    //var afterRemove = this.document.getElementById("innerDiv");
+        //    //alert(afterRemove);
+
+        //    //var outerDiv = this.document.getElementById("outerDiv");
+        //    //var element = this.document.createElement("article");
+        //    //element.innerText = "My new <article> .. ";
+        //    //outerDiv.appendChild(element);
+
+        //    //var ele = this.document.getElementById("outerDiv").appendChild(this.document.createElement("article"));
+        //    //ele.innerText = "some random text";
+
+        //    //var ele = this.document.getElementById("outerDiv").insertBefore(
+        //    //    this.document.createElement("article"),
+        //    //    this.document.getElementById("innerDiv"));
+        //    //ele.innerText = " something new";
+
+        //    var inner = this.document.getElementById("innerDiv");
+        //    var ele = inner.insertBefore(this.document.createElement("article"), inner.firstChild);
+        //    ele.innerText = "new element <something>";
+
+        //    var innerDiv = this.document.getElementById("innerDiv");
+            //    var p = innerDiv.removeChild(document.getElementById("P1"));
+
+            //***replace elements***
+            //var innerDiv = this.document.getElementById("innerDiv");
+            //var newDiv = this.document.createElement("div");
+
+            //for (var i = 0; i < innerDiv.childNodes.length; i++) {
+
+            //    var anchor = newDiv.appendChild(document.createElement("a"));
+            //    anchor.setAttribute("href", "http://www.google.com");
+            //    anchor.text = innerDiv.childNodes[i].textContent;
+            //    newDiv.appendChild(document.createElement("br"));
+            //}
+
+            //innerDiv.replaceNode(newDiv);
+
+        }
+
+
+
+    </script>
+</head>
+<body>
+    <div id="outerDiv">
+        <p class='mainPara'>Main Paragraph</p>
+        <ul>
+            <li>First List Item</li>
+            <li>Second List Item</li>
+            <li>Third List Item</li>
+            <li>Fourth List Item</li>
+        </ul>
+        <div id="innerDiv">
+            <p class='subPara' id='P1'>Paragraph 1</p>
+            <p class='subPara' id='P2'>Paragraph 2</p>
+            <p class='subPara' id='P3'>Paragraph 3</p>
+            <p class='subPara' id='P4'>Paragraph 4</p>
+        </div>
+        <table>
+            <tr>
+                <td>
+                    Row 1
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Row 2
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Row 3
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Row 4
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Row 5
+                </td>
+            </tr>
+        </table>
+        <button onclick="testFunction()">Execute</button>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+﻿<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        div {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+    </style>
+
+    <script>
+
+        window.onload = function () {
+            var buttons = document.getElementsByTagName('button'),
+                questions = document.getElementsByTagName('div');
+            for (var i = 0; i < buttons.length; i++) {
+                var button = buttons[i];
+                button.addEventListener('click', function () {
+                    var target = this.getAttribute('data-next');
+                    for (var j = 0; j < questions.length; j++) {
+                        var question = questions[j];
+                        if (question.id == target) {
+                            question.classList.add('show');
+                        } else if (question.classList.contains('show')) {
+                            question.classList.remove('show');
+                        }
+                    }
+                });
+            }
+
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+    <header>
+        A dynamic Questionnaire.
+    </header>
+    <section>
+        <article>
+            <hgroup>
+                <h1>Questionnaire</h1>
+                <h2>
+                    Answer the questions in order as they
+                    appear.
+                </h2>
+            </hgroup>
+            <div id="Question1" class="show">
+                1.
+                <button type="button" data-next="Question2">Yes</button>
+                <button type="button" data-next="Question3">No</button>
+
+            </div>
+            <div id="Question2">
+                2.
+                <button type="button" data-next="Question4">Yes</button>
+                <button type="button" data-next="Question5">No</button>
+            </div>
+            <div id="Question3">
+                3.
+                <button type="button" data-next="Question6">Yes</button>
+                <button type="button" data-next="Question6">No</button>
+            </div>
+            <div id="Question4">
+                4.
+                <button type="button" data-next="Question10">Yes</button>
+                <button type="button" data-next="Question10">No</button>
+            </div>
+            <div id="Question5">
+                5.
+                <button type="button" data-next="Question10">Yes</button>
+                <button type="button" data-next="Question10">No</button>
+            </div>
+            <div id="Question6">
+                6.
+                <button type="button" data-next="Question7">Yes</button>
+                <button type="button" data-next="Question8">No</button>
+            </div>
+            <div id="Question7">
+                7.
+                <button type="button" data-next="Question9">Yes</button>
+                <button type="button" data-next="Question9">No</button>
+            </div>
+            <div id="Question8">
+                8.
+                <button type="button" data-next="Question9">Yes</button>
+                <button type="button" data-next="Question9">No</button>
+            </div>
+            <div id="Question9">
+                9.
+                <button type="button" data-next="Question10">Yes</button>
+                <button type="button" data-next="Question10">No</button>
+            </div>
+            <div id="Question10">
+                10.
+            </div>
+        </article>
+    </section>
+    </body>
+</html>
